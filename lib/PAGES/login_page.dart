@@ -1,6 +1,7 @@
 import "package:flutter/cupertino.dart";
 import "package:flutter/material.dart";
 import "package:flutter/widgets.dart";
+import "package:onflutter/utils/routes.dart";
 
 // class LoginPage extends StatelessWidget {
 //   Widget build(BuildContext context) {
@@ -22,6 +23,7 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       color: Colors.white,
+      child:SingleChildScrollView(
       child: Column(
         children: [
           Image.asset(
@@ -60,12 +62,13 @@ class LoginPage extends StatelessWidget {
                 SizedBox(
                   height: 20.0,
                 ),
-                ElevatedButton(onPressed: () {print("hi bhawna");}, child: Text("login"), 
-                style:TextButton.styleFrom(),)
+                ElevatedButton(onPressed: () {Navigator.pushNamed(context, MyRoutes.HomeRoute);}, child: Text("login"), 
+                style:TextButton.styleFrom(minimumSize: Size(150, 40)),)
               ],
             ),
           ),
         ],
+      ),
       ),
     );
   }
