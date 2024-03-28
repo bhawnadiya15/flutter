@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import "package:onflutter/widgets/drawer.dart";
 class HomePage extends StatelessWidget{
   Widget build(BuildContext context){
     return  Scaffold(
@@ -10,7 +11,7 @@ class HomePage extends StatelessWidget{
             child: Text("welcome to 30 days of flutter  "),
           ),
         ),
-        drawer: Drawer(),
+        drawer: myDrawer(),
 
       );
   }

@@ -17,13 +17,14 @@ class MyApp extends StatelessWidget{
         brightness: Brightness.light,
         
         appBarTheme: AppBarTheme(
-          color: Colors.green, // Specify color for app bar in dark theme
+          color: Color.fromARGB(255, 116, 209, 228), // Specify color for app bar in dark theme
         ),
       
       ),
       //initialRoute: "/HomePage",
+      debugShowCheckedModeBanner: false,
       routes: {
-        "/":(context) => LoginPage(),
+        "/":(context) => HomePage(),
         MyRoutes.HomeRoute:(context) => HomePage(),
         MyRoutes.LoginRoute:(context) => LoginPage(),
         
