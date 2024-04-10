@@ -1,16 +1,20 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
+
 import 'package:onflutter/models/catalog.dart';
-class ItemWidget extends StatelessWidget{
+
+class ItemWidget extends StatelessWidget {
   final Item item;
 
-  const ItemWidget({super.key, required this.item}
-  ):assert(item!=null),
-  super(key: key);
+  const ItemWidget({
+    Key? key,
+    required this.item,
+  }) : super(key: key);
 
-  
-  Widget build(BuildContext context){
+  @override
+  Widget build(BuildContext context) {
     return Container(
-
+      // Your widget implementation here
     );
   }
 }
